@@ -16,7 +16,7 @@ public class SpringBootDemoApplication extends SpringBootServletInitializer {
 		
 		SpringApplication.run(SpringBootDemoApplication.class, args);
 		
-		System.out.println("HI");
+		
 	}
 
 	@Bean
