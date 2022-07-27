@@ -27,6 +27,11 @@ import com.zensar.springbootdemo.service.StudentService;
 		MediaType.APPLICATION_XML_VALUE }, consumes = { MediaType.APPLICATION_JSON_VALUE,
 				MediaType.APPLICATION_XML_VALUE })
 public class StudentController {
+	
+	@GetMapping("/hello")
+	public String sayHello() {
+		return "<h2> Spring Boot + Jenkins + GitHub </h2>";
+	}
 
 	@Autowired
 	private StudentService studentService;
